@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Big | Raz-Kids</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="../../common/libs/jquery.js"></script>
+		<script type="text/javascript" src="../../common/libs/jquery-1.11.1.min.js"></script>
+
+		<script type="text/javascript" src="../../common/libs/TweenMax.js"></script>
+		<script type="text/javascript" src="../../common/libs/jquery-ui.js"></script>
+		<script type="text/javascript" src="../../common/libs/animator.js"></script>
+		<script type="text/javascript" src="../../common/libs/animatorView.js"></script>
+		<script type="text/javascript" src="../../common/libs/commonutils.js"></script>
+	
+		<script type="text/javascript" src="../../common/libs/easeljs-0.8.0.min.js"></script>
+		<!-- CSS FILE LINKING -->
+		<link rel="stylesheet" type="text/css" href="../../common/css/style.css">
+		<!-- JS FILE LINKING -->
+		<script type="text/javascript" src="../../common/libs/scaling_canvas.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	<style>
+			/*Adding bg and masking panel*/
+			.bg-setting{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+			#bg-panel {
+				background: url("assets/images/page7_bg.png") no-repeat;
+				background-size: 100%, 100%;
+			}
+
+			#mask-panel {
+				background: url("assets/images/page7_border_overlap.png") no-repeat;
+				background-size: 100%, 100%;
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<div id="wrapper_parent">
+			<div id="wrapper">
+				<div class="bg-setting" id="bg-panel"></div>	
+				<div class="pageContainer">
+					<canvas id="razkidsCanvas" width="467" height="357"></canvas>
+				</div>	
+				<div class="bg-setting" id="mask-panel"></div>	
+			</div>
+		</div>
+	</body>
+</html>

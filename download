@@ -1,0 +1,12 @@
+#!/bin/bash
+
+URL=`cat url`
+
+for url in $URL ; 
+do
+file=`echo $url  |sed -e 's/https\:\/\///g'`
+if ! [ -f $file ]; then 
+download="$download $url"
+wget -p $url &
+fi
+done
